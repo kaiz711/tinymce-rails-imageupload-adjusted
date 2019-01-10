@@ -34,7 +34,7 @@
         }
 
         body = body.concat([
-          { type: 'container', classes: 'error', html: "<p style='color: #b94a48;'>&nbsp;</p>" },
+          { type: 'container', classes: 'error', html: "<p style='color: #b94a48;'></p>" },
 
           // Trick TinyMCE to add a empty div that "preloads" the throbber image
           { type: 'container', classes: 'throbber' }
@@ -197,7 +197,7 @@
         var message = win.find('.error')[0].getEl();
 
         if (message) {
-          message.getElementsByTagName('p')[0].innerHTML = '&nbsp;';
+          message.getElementsByTagName('p')[0].innerHTML = '';
         }
       }
 
